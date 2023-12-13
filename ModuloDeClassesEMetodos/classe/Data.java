@@ -1,4 +1,4 @@
-package classe;
+package ModuloDeClassesEMetodos.classe;
 
 public class Data implements Cloneable{
 	int dia;

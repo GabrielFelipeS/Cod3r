@@ -1,4 +1,4 @@
-package classe;
+package ModuloDeClassesEMetodos.classe;
 
 public class PrimeiroTrauma {
 	int a = 5; // Não pode mexer aqui!

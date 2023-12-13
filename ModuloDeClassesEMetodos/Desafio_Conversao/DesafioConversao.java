@@ -1,4 +1,4 @@
-package Desafio_Conversao;
+package ModuloDeClassesEMetodos.Desafio_Conversao;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
