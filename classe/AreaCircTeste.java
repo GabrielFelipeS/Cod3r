@@ -1,4 +1,4 @@
-package Cod3r.classe;
+package classe;
 
 public class AreaCircTeste {
 	public static void main(String[] args) {

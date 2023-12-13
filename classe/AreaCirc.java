@@ -1,4 +1,4 @@
-package Cod3r.classe;
+package classe;
 
 public class AreaCirc {
 	double raio;

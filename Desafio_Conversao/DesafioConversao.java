@@ -1,4 +1,4 @@
-package Cod3r.Desafio_Conversao;
+package Desafio_Conversao;
 
 import java.math.BigDecimal;
 import java.util.Scanner;

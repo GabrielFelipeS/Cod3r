@@ -1,18 +1,21 @@
-package Cod3r.classe;
+package classe;
 
-public class DesafioClasseData implements Cloneable{
+public class Data implements Cloneable{
 	int dia;
 	int mes;
 	int ano;
 	
+	public Data() {}
+	
+	public Data(int dia, int mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+	
 	public void teste() {
-		try {
-			DesafioClasseData teste =  (DesafioClasseData) this.clone();
-			teste.printarData();
-		} catch (CloneNotSupportedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Data teste =  this.clone();
+		teste.printarData();
 	}
 	
 	public void printarData() {
@@ -21,6 +24,11 @@ public class DesafioClasseData implements Cloneable{
 		
 	public String obterDataFormatada() {
 		return String.format("%02d/%02d/%04d", dia, mes, ano);
+	}
+	
+	@Override
+	public Data clone() {
+		return new Data(dia, mes, ano);
 	}
 	
 	@Override
