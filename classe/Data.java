@@ -11,6 +11,9 @@ public class Data implements Cloneable{
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
+		
+		int a;
+		System.out.println(a = 0);
 	}
 	
 	public void teste() {
