@@ -12,6 +12,7 @@ public class Data implements Cloneable{
 		this.mes = mes;
 		this.ano = ano;
 		
+		@SuppressWarnings("unused")
 		int a;
 		System.out.println(a = 0);
 	}
