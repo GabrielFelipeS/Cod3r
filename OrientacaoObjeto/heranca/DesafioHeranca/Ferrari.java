@@ -2,7 +2,7 @@ package OrientacaoObjeto.heranca.DesafioHeranca;
 
 public class Ferrari extends Carro{
 	
-	Ferrari() {
+	public Ferrari() {
 		this(315);
 	}
 	

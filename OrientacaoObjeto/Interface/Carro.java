@@ -1,21 +1,33 @@
-package OrientacaoObjeto.heranca.DesafioHeranca;
+package OrientacaoObjeto.Interface;
 
 public class Carro {
 	final int VELOCIDADE_MAXIMA;
 	public int velocidadeAtual;
 	
-	protected int acelerar = 5;
-	protected int desacelerar = 5;
+	private int acelerar = 5;
+	private int desacelerar = 5;
 	
 	public Carro(int valocidadeMaxima) {
 		VELOCIDADE_MAXIMA = valocidadeMaxima;
 	}
 	
+	int getAcelerar() {
+		return this.acelerar;
+	}
+	
+	void setAcelerar(int acelerar) {
+		this.acelerar = acelerar;
+	}
+	
+	void setDesacelerar(int desacelerar) {
+		this.desacelerar = desacelerar;
+	}
+	
 	public void acelerar() {
-		if(velocidadeAtual + 5 > VELOCIDADE_MAXIMA) {
+		if(velocidadeAtual + getAcelerar() > VELOCIDADE_MAXIMA) {
 			velocidadeAtual = VELOCIDADE_MAXIMA;
 		} else {
-			velocidadeAtual += acelerar;
+			velocidadeAtual += getAcelerar();
 		}
 	}
 	
@@ -25,6 +37,7 @@ public class Carro {
 		}
 	}
 	
+
 	@Override
 	public String toString() {
 		return String.format("Velocidade atual é %dKm/h", velocidadeAtual);
